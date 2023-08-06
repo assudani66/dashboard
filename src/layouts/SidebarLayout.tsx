@@ -18,6 +18,7 @@ const SidebarLayout = ({ nav }: SidebarLayoutProps) => {
       {Object.keys(nav).map((content: string, index) => (
         <div key={index} className="p-2">
           <p className="">{content}</p>
+          {/* @ts-ignore */}
           {nav[content].map(
             (
               {
