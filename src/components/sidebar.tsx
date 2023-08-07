@@ -3,11 +3,7 @@ import { navigationOptions } from "@/navs/navigationOptions";
 import React from "react";
 
 const Sidebar = () => {
-  return (
-    <div>
-      <SidebarLayout nav={navigationOptions} />
-    </div>
-  );
+  return <SidebarLayout nav={navigationOptions} />;
 };
 
 export default Sidebar;

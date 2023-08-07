@@ -1,19 +1,5 @@
-import Sidebar from "@/components/sidebar";
-import Overview from "@/components/overview";
-import Transactions from "@/components/transactions";
+import Home from "../page";
 
-export default function Home() {
-  return (
-    <main>
-      <aside>
-        <Sidebar />
-      </aside>
-      <section>
-        <Overview />
-      </section>
-      <section>
-        <Transactions />
-      </section>
-    </main>
-  );
+export default function Page() {
+  return <Home />;
 }
