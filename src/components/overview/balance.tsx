@@ -24,20 +24,20 @@ const Balance = ({
         <div className="flex space-x-4">
           <section className="flex w-3/6 flex-col border p-4 ">
             <p>Earnings</p>
-            <div className="flex">
+            <div className="flex items-center space-x-2">
               <p className="text-4xl font-semibold">120%</p>
-              <p className="px-2 bg-green-600 rounded-full text-white h-fit">
-                +{changePercentage}%
-              </p>
+              <div className="px-2 py-2.5 flex items-center text-xs bg-green-600 rounded-full ">
+                <p className="text-white -my-1">+{changePercentage}%</p>
+              </div>
             </div>
           </section>
           <section className="flex w-3/6 flex-col border p-4 ">
             <p>Sales Value</p>
-            <div className="flex">
+            <div className="flex items-center space-x-2">
               <p className="text-4xl font-semibold">${salesValue}</p>
-              <p className="px-2 bg-green-600 rounded-full text-white h-fit">
-                +12%
-              </p>
+              <div className="px-2 py-2.5 flex items-center text-xs bg-green-600 rounded-full ">
+                <p className="text-white -my-1">+{changePercentage}%</p>
+              </div>
             </div>
           </section>
         </div>

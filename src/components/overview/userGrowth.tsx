@@ -12,14 +12,14 @@ const UserGrowth = ({
   return (
     <div className="p-4 border rounded m-4 flex flex-col space-y-4">
       <header>
-        <p>New Users</p>
+        <p className="text-slate-400">New Users</p>
       </header>
       <main className="flex flex-col space-y-6">
         <section className="flex items-center space-x-2">
           <p className="text-4xl font-semibold">{percentage}%</p>
-          <p className="px-2 bg-green-600 rounded-full text-white h-fit">
-            +{changePercentage}%
-          </p>
+          <div className="px-2 py-2.5 flex items-center text-xs bg-green-600 rounded-full ">
+            <p className="text-white -my-1">+{changePercentage}%</p>
+          </div>
         </section>
         <div className="flex space-x-4">
           {graphs.map((amount, index) => {
